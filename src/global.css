@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Jost Variable', system-ui, sans-serif;
+  }
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
+.btn {
+  @apply font-light;
+}
+
+p {
+  @apply font-light;
+}
+
+.card-title {
+  @apply font-normal;
+}
+
+.prose {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-normal;
+  }
+}

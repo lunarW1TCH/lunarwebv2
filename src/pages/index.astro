@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Intro from '../components/home/intro.svelte';
+import Experience from '../components/home/experience.svelte';
+---
+
+<Layout>
+  <div class='mx-8 my-12 grid gap-4 md:grid-cols-2'>
+    <Intro />
+    <Experience client:load />
+  </div>
+</Layout>
