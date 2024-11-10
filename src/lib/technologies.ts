@@ -30,6 +30,14 @@ export const LinkableTechnologies = z.enum([
   'arduino',
   'rpi',
   'tailwind',
+  'scss',
+  'react-native',
+  'socket-io',
+  'tauri',
+  'emotion',
+  'phoenix',
+  'rocket',
+  'express',
 ]);
 
 export const NonLinkableTechnologies = z.enum([
@@ -45,7 +53,7 @@ export type LinkableTechnologies = z.infer<typeof LinkableTechnologies>;
 
 export type NonLinkableTechnologies = z.infer<typeof NonLinkableTechnologies>;
 
-export const LINKS = {
+export const TECH_LINKS = {
   typescript: 'https://www.typescriptlang.org/',
   prisma: 'https://www.prisma.io/',
   mongo: 'https://www.mongodb.com/',
@@ -75,9 +83,17 @@ export const LINKS = {
   ue5: 'https://www.unrealengine.com/en-US/unreal-engine-5',
   vba: 'https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office',
   vue: 'https://vuejs.org/',
+  'react-native': 'https://reactnative.dev/',
+  'socket-io': 'https://socket.io/',
+  emotion: 'https://emotion.sh/',
+  express: 'https://expressjs.com/',
+  phoenix: 'https://www.phoenixframework.org/',
+  rocket: 'https://rocket.rs/',
+  scss: 'https://sass-lang.com/',
+  tauri: 'https://tauri.app/',
 } as const satisfies Record<LinkableTechnologies, string>;
 
-export const NAMES = {
+export const TECH_NAMES = {
   typescript: 'TypeScript',
   prisma: 'Prisma',
   mongo: 'MongoDB',
@@ -113,6 +129,14 @@ export const NAMES = {
   fp: 'Functional Programming',
   linux: 'Linux',
   oop: 'Object Oriented Programming',
+  'react-native': 'React Native',
+  'socket-io': 'Socket.IO',
+  emotion: 'Emotion CSS',
+  express: 'Express',
+  phoenix: 'Phoenix',
+  rocket: 'Rocket',
+  scss: 'SCSS',
+  tauri: 'Tauri',
 } as const satisfies Record<
   LinkableTechnologies | NonLinkableTechnologies,
   string

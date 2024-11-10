@@ -1,16 +1,22 @@
 <a
-  class="badge link text-xs font-normal no-underline {type === 'accent' &&
-    'badge-accent'} {type === 'primary' && 'badge-primary'} {type ===
-    'secondary' && 'badge-secondary'} {type === 'neutral' && 'badge-neutral'}"
-  href={LINKS[tech]}
+  class="badge link text-xs font-normal no-underline"
+  class:badge-secondary={type === 'secondary'}
+  class:badge-primary={type === 'primary'}
+  class:badge-neutral={type === 'neutral'}
+  class:badge-accent={type === 'accent'}
+  href={TECH_LINKS[tech]}
   target="_blank"
   rel="noreferrer"
 >
-  {NAMES[tech]}
+  {TECH_NAMES[tech]}
 </a>
 
 <script lang="ts">
-  import { LINKS, type LinkableTechnologies, NAMES } from '@/lib/technologies';
+  import {
+    TECH_LINKS,
+    type LinkableTechnologies,
+    TECH_NAMES,
+  } from '@/lib/technologies';
 
   let { tech, type }: Props = $props();
 

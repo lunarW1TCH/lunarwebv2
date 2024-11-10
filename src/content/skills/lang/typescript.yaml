@@ -1,22 +1,13 @@
 id: typescript
 type: lang
 projects:
-  - name: Lunarweb
-    link: /projects/lunarweb
-  - name: rest-api-performance
-    link: /projects/rest-api-performance
-  - name: simple-2d-vectors
-    link: /projects/simple-2d-vectors
-  - name: Minos
-    link: /projects/minos
-  - name: lunar-stars
-    link: /projects/lunar-stars
-  - name: lunarify
-    link: /projects/lunarify
-  - name: "Bachelor's thesis"
-    link: https://www.linkedin.com/in/adrian-zegnalek/details/projects/
+  - lunarweb
+  - rest-api-performance
+  - simple-2d-vectors
+  - minos
+  - lunar-stars
+  - lunarify
+  - thesis
 jobs:
-  - name: 4CF
-    link: https://4cf.eu/
-  - name: ANV
-    link: https://anvproduction.pl/
+  - 4cf
+  - anv

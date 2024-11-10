@@ -1,0 +1,5 @@
+id: svelte
+type: framework
+projects:
+  - taurim
+  - lunarweb

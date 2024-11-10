@@ -1,13 +1,15 @@
 <span
-  class="badge badge-accent text-xs font-normal {type === 'accent' &&
-    'badge-accent'} {type === 'primary' && 'badge-primary'} {type ===
-    'secondary' && 'badge-secondary'} {type === 'neutral' && 'badge-neutral'}"
+  class="badge text-xs font-normal"
+  class:badge-secondary={type === 'secondary'}
+  class:badge-primary={type === 'primary'}
+  class:badge-neutral={type === 'neutral'}
+  class:badge-accent={type === 'accent'}
 >
-  {NAMES[tech]}
+  {TECH_NAMES[tech]}
 </span>
 
 <script lang="ts">
-  import { NAMES, type NonLinkableTechnologies } from '@/lib/technologies';
+  import { TECH_NAMES, type NonLinkableTechnologies } from '@/lib/technologies';
 
   let { tech, type }: Props = $props();
 
