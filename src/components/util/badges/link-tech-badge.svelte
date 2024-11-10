@@ -1,5 +1,7 @@
 <a
-  class="badge link badge-accent text-xs font-normal no-underline"
+  class="badge link text-xs font-normal no-underline {type === 'accent' &&
+    'badge-accent'} {type === 'primary' && 'badge-primary'} {type ===
+    'secondary' && 'badge-secondary'} {type === 'neutral' && 'badge-neutral'}"
   href={LINKS[tech]}
   target="_blank"
   rel="noreferrer"
@@ -10,7 +12,10 @@
 <script lang="ts">
   import { LINKS, type LinkableTechnologies, NAMES } from '@/lib/technologies';
 
-  let { tech }: Props = $props();
+  let { tech, type }: Props = $props();
 
-  type Props = { tech: LinkableTechnologies };
+  type Props = {
+    tech: LinkableTechnologies;
+    type: 'neutral' | 'secondary' | 'accent' | 'primary';
+  };
 </script>

@@ -1,3 +1,50 @@
+import { z } from 'astro:schema';
+
+export const LinkableTechnologies = z.enum([
+  'typescript',
+  'prisma',
+  'mongo',
+  'bun',
+  'panda',
+  'shadcn',
+  'vercel',
+  'react',
+  'react-email',
+  'next',
+  'stripe',
+  'oauth',
+  'node',
+  'elixir',
+  'javascript',
+  'python',
+  'rust',
+  'vba',
+  'astro',
+  'flask',
+  'hono',
+  'elysia',
+  'svelte',
+  'vue',
+  'docker',
+  'ue5',
+  'arduino',
+  'rpi',
+  'tailwind',
+]);
+
+export const NonLinkableTechnologies = z.enum([
+  'sso',
+  'sql',
+  'no-sql',
+  'oop',
+  'fp',
+  'linux',
+]);
+
+export type LinkableTechnologies = z.infer<typeof LinkableTechnologies>;
+
+export type NonLinkableTechnologies = z.infer<typeof NonLinkableTechnologies>;
+
 export const LINKS = {
   typescript: 'https://www.typescriptlang.org/',
   prisma: 'https://www.prisma.io/',
@@ -12,6 +59,22 @@ export const LINKS = {
   react: 'https://react.dev/',
   next: 'https://nextjs.org/',
   'react-email': 'https://react.email/',
+  arduino: 'https://www.arduino.cc/',
+  astro: 'https://astro.build/',
+  docker: 'https://www.docker.com/',
+  elixir: 'https://elixir-lang.org/',
+  elysia: 'https://elysiajs.com/',
+  flask: 'https://flask.palletsprojects.com/en/3.0.x/patterns/',
+  hono: 'https://hono.dev/',
+  javascript: 'https://developer.mozilla.org/en-US/docs/Web/javascript',
+  python: 'https://www.python.org/',
+  rpi: 'https://www.raspberrypi.com/',
+  rust: 'https://www.rust-lang.org/',
+  svelte: 'https://svelte.dev/',
+  tailwind: 'https://tailwindcss.com/',
+  ue5: 'https://www.unrealengine.com/en-US/unreal-engine-5',
+  vba: 'https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office',
+  vue: 'https://vuejs.org/',
 } as const satisfies Record<LinkableTechnologies, string>;
 
 export const NAMES = {
@@ -31,24 +94,26 @@ export const NAMES = {
   sso: 'SSO',
   sql: 'SQL',
   'no-sql': 'NoSQL',
+  arduino: 'Arduino',
+  astro: 'Astro',
+  docker: 'Docker',
+  elixir: 'Elixir',
+  elysia: 'Elysia',
+  flask: 'Flask',
+  hono: 'Hono',
+  javascript: 'JavaScript',
+  python: 'Python',
+  rpi: 'RaspberryPi',
+  rust: 'Rust',
+  svelte: 'Svelte',
+  tailwind: 'Tailwind',
+  ue5: 'Unreal Engine 5',
+  vba: 'VBA',
+  vue: 'Vue',
+  fp: 'Functional Programming',
+  linux: 'Linux',
+  oop: 'Object Oriented Programming',
 } as const satisfies Record<
   LinkableTechnologies | NonLinkableTechnologies,
   string
 >;
-
-export type LinkableTechnologies =
-  | 'typescript'
-  | 'prisma'
-  | 'mongo'
-  | 'bun'
-  | 'panda'
-  | 'shadcn'
-  | 'vercel'
-  | 'react'
-  | 'react-email'
-  | 'next'
-  | 'stripe'
-  | 'oauth'
-  | 'node';
-
-export type NonLinkableTechnologies = 'sso' | 'sql' | 'no-sql';

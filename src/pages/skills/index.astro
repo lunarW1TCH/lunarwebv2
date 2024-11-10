@@ -1,5 +1,20 @@
 ---
+import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
+import SkillItem from '../../components/content/skill-item.svelte';
+
+const skills = await getCollection('skill');
+
+console.log(skills);
 ---
 
-<Layout title='Skills'>todo</Layout>
+<Layout title='Skills'>
+  <div class='flex flex-col gap-2'>
+    <div>todo: search, filter, favourite technologies carousel</div>
+  </div>
+  <ul>
+    {skills.map(({ data }) => <SkillItem client:load {data} />)}
+    {skills.map(({ data }) => <SkillItem client:load {data} />)}
+    {skills.map(({ data }) => <SkillItem client:load {data} />)}
+  </ul>
+</Layout>

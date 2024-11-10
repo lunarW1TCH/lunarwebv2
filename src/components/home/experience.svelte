@@ -1,5 +1,5 @@
 <div
-  class="card card-compact mx-1 min-h-[500px] w-[22rem] bg-neutral p-0 text-neutral-content shadow-xl"
+  class="card card-compact mx-1 min-h-[565px] w-[22rem] bg-neutral p-0 text-neutral-content shadow-xl"
 >
   <div class="card-body">
     <div class="carousel carousel-center h-full gap-2 overflow-hidden">

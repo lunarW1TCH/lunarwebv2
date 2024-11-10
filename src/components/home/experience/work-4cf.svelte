@@ -53,20 +53,21 @@
   <div class="grow"></div>
 
   <div class="flex flex-row flex-wrap gap-2">
-    <LinkTechBadge tech="typescript" />
-    <LinkTechBadge tech="react" />
-    <LinkTechBadge tech="next" />
-    <LinkTechBadge tech="prisma" />
-    <NameTechBadge tech="sso" />
-    <NameTechBadge tech="no-sql" />
-    <LinkTechBadge tech="mongo" />
-    <LinkTechBadge tech="node" />
-    <LinkTechBadge tech="bun" />
-    <LinkTechBadge tech="stripe" />
-    <LinkTechBadge tech="panda" />
-    <LinkTechBadge tech="react-email" />
-    <LinkTechBadge tech="vercel" />
-    <LinkTechBadge tech="shadcn" />
+    <LinkTechBadge type="accent" tech="typescript" />
+    <LinkTechBadge type="accent" tech="react" />
+    <LinkTechBadge type="accent" tech="next" />
+    <LinkTechBadge type="accent" tech="elysia" />
+    <LinkTechBadge type="accent" tech="prisma" />
+    <NameTechBadge type="accent" tech="sso" />
+    <NameTechBadge type="accent" tech="no-sql" />
+    <LinkTechBadge type="accent" tech="mongo" />
+    <LinkTechBadge type="accent" tech="node" />
+    <LinkTechBadge type="accent" tech="bun" />
+    <LinkTechBadge type="accent" tech="stripe" />
+    <LinkTechBadge type="accent" tech="panda" />
+    <LinkTechBadge type="accent" tech="react-email" />
+    <LinkTechBadge type="accent" tech="vercel" />
+    <LinkTechBadge type="accent" tech="shadcn" />
   </div>
 </div>
 
