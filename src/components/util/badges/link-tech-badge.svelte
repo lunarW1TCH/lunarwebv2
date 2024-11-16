@@ -2,7 +2,7 @@
   class="badge link text-xs font-normal no-underline"
   class:badge-secondary={type === 'secondary'}
   class:badge-primary={type === 'primary'}
-  class:badge-neutral={type === 'neutral'}
+  class:badge-info={type === 'info'}
   class:badge-accent={type === 'accent'}
   href={TECH_LINKS[tech]}
   target="_blank"
@@ -22,6 +22,6 @@
 
   type Props = {
     tech: LinkableTechnologies;
-    type: 'neutral' | 'secondary' | 'accent' | 'primary';
+    type: 'info' | 'secondary' | 'accent' | 'primary';
   };
 </script>

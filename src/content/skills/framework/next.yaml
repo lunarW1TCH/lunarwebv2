@@ -1,0 +1,8 @@
+id: next
+type: framework
+projects:
+  - minos
+  - thesis
+jobs:
+  - anv
+  - 4cf

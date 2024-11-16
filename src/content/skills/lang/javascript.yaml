@@ -1,0 +1,8 @@
+id: javascript
+type: lang
+projects:
+  - rest-api-performance
+  - minos
+  - lunar-roller
+jobs:
+  - anv

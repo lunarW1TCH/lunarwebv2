@@ -1,0 +1,10 @@
+id: bun
+type: other
+jobs:
+  - 4cf
+  - anv
+projects:
+  - lunarweb
+  - rest-api-performance
+  - minos
+  - taurim

@@ -1,0 +1,7 @@
+id: state-management
+type: lib
+projects:
+  - taurim
+  - lunarify
+jobs:
+  - 4cf

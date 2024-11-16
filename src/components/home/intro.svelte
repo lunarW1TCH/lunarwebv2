@@ -1,5 +1,5 @@
 <div
-  class="card card-compact mx-1 w-[22rem] bg-neutral p-0 text-neutral-content shadow-xl"
+  class="card card-compact mx-1 w-[22rem] flex-shrink bg-neutral p-0 text-neutral-content shadow-xl"
 >
   <figure class="p-4">
     <img

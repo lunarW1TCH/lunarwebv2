@@ -47,6 +47,7 @@ export const NonLinkableTechnologies = z.enum([
   'oop',
   'fp',
   'linux',
+  'state-management',
 ]);
 
 export type LinkableTechnologies = z.infer<typeof LinkableTechnologies>;
@@ -137,6 +138,8 @@ export const TECH_NAMES = {
   rocket: 'Rocket',
   scss: 'SCSS',
   tauri: 'Tauri',
+  'state-management':
+    'State management [zustand, nanostores, svelte/store, ...]',
 } as const satisfies Record<
   LinkableTechnologies | NonLinkableTechnologies,
   string

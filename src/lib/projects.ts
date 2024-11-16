@@ -23,7 +23,7 @@ export const PROJECT_NAMES = {
   lunarweb: 'lunarweb',
   minos: 'Minos',
   taurim: 'Taurim',
-  thesis: '',
+  thesis: "Bachelor's thesis",
 } as const satisfies Record<Projects, string>;
 
 export const PROJECT_LINKS = {
@@ -36,7 +36,7 @@ export const PROJECT_LINKS = {
   lunarweb: '/projects/lunarweb',
   minos: '/projects/minos',
   taurim: '/projects/taurim',
-  thesis: '',
+  thesis: '/#exp1',
 } as const satisfies Record<Projects, string>;
 
 export type Projects = z.infer<typeof Projects>;

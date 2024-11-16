@@ -2,11 +2,9 @@
   class="badge link text-xs font-normal no-underline"
   class:badge-secondary={type === 'secondary'}
   class:badge-primary={type === 'primary'}
-  class:badge-neutral={type === 'neutral'}
+  class:badge-info={type === 'info'}
   class:badge-accent={type === 'accent'}
   href={PROJECT_LINKS[project]}
-  target="_blank"
-  rel="noreferrer"
 >
   {PROJECT_NAMES[project]}
 </a>
@@ -18,6 +16,6 @@
 
   type Props = {
     project: Projects;
-    type: 'neutral' | 'secondary' | 'accent' | 'primary';
+    type: 'info' | 'secondary' | 'accent' | 'primary';
   };
 </script>

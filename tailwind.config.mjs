@@ -34,7 +34,7 @@ export default {
           'base-300': '#111113',
           'base-content': '#ebecf0',
 
-          info: '#7acdf0',
+          info: '#b1e1f5',
           success: '#4cb8ad',
           warning: '#fdba6d',
           error: '#ee6363',

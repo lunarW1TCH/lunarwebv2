@@ -1,0 +1,7 @@
+id: flask
+type: framework
+projects:
+  - rest-api-performance
+  - minos
+jobs:
+  - anv

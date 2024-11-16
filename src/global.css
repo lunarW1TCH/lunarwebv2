@@ -9,19 +9,15 @@
 }
 
 * {
-  box-sizing: border-box !important;
+  @apply min-w-0;
+  @apply min-h-0;
+  @apply box-border;
 }
 
-.btn {
-  @apply font-light;
-}
-
-p {
-  @apply font-light;
-}
-
+.btn,
+p,
 .card-title {
-  @apply font-normal;
+  @apply font-light;
 }
 
 .prose {

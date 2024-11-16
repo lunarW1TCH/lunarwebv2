@@ -1,18 +1,21 @@
 ---
 import { getCollection } from 'astro:content';
-import Layout from '../../layouts/Layout.astro';
-import SkillItem from '../../components/content/skill-item.svelte';
+import Layout from '../../layouts/layout.astro';
+import groupBy from 'object.groupby'; // vercel's node version does not support this yet
+import SkillsContainer from '../../components/content/skills-container.svelte';
 
 const skills = await getCollection('skill');
+const grouped = groupBy(
+  skills.sort((a, b) => a.data.id.localeCompare(b.data.id)).map((s) => s.data),
+  (s) => s.type
+);
 
-console.log(skills);
+console.log(grouped);
 ---
 
 <Layout title='Skills'>
-  <div class='flex flex-col gap-2'>
+  <!-- <div class='flex flex-col gap-2'>
     <div>todo: search, filter, favourite technologies carousel</div>
-  </div>
-  <ul>
-    {skills.map(({ data }) => <SkillItem client:load {data} />)}
-  </ul>
+  </div> -->
+  <SkillsContainer skills={grouped} client:load />
 </Layout>
