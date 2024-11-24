@@ -1,0 +1,5 @@
+id: rust
+type: lang
+projects:
+  - rest-api-performance
+  - exchange-rates

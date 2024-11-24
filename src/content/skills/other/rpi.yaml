@@ -1,0 +1,4 @@
+id: rpi
+type: other
+jobs:
+  - anv

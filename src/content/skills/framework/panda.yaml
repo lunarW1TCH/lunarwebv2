@@ -1,0 +1,8 @@
+id: panda
+type: framework
+projects:
+  - taurim
+  - lunarweb
+  - thesis
+jobs:
+  - 4cf

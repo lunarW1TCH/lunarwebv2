@@ -25,7 +25,7 @@
           </a>
         </div>
       </div>
-      <span class=" text-lg">The Futures Literacy Company</span>
+      <span class="text-lg">The Futures Literacy Company</span>
     </div>
   </div>
 

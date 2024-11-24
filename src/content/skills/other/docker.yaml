@@ -1,0 +1,7 @@
+id: docker
+type: other
+jobs:
+  - anv
+projects:
+  - thesis
+  - exchange-rates

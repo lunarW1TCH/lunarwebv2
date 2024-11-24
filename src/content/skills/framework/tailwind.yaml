@@ -1,0 +1,5 @@
+id: tailwind
+type: framework
+projects:
+  - lunarweb
+  - thesis

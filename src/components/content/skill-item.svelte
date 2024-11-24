@@ -21,7 +21,13 @@
       </div>
     {/if}
 
-    {@render jobBadges()}
+    {#if jobs}
+      <div class="flex flex-wrap gap-2">
+        {#each jobs as job}
+          <JobBadge {job} {type} />
+        {/each}
+      </div>
+    {/if}
 
     {#if projects}
       <div class="card-side flex flex-wrap gap-2">
@@ -32,16 +38,6 @@
     {/if}
   </div>
 </div>
-
-{#snippet jobBadges()}
-  {#if jobs}
-    <div class="flex flex-wrap gap-2">
-      {#each jobs as job}
-        <JobBadge {job} {type} />
-      {/each}
-    </div>
-  {/if}
-{/snippet}
 
 <script lang="ts">
   import JobBadge from './../util/badges/job-badge.svelte';

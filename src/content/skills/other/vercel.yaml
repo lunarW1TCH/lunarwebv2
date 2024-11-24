@@ -1,0 +1,8 @@
+id: vercel
+type: other
+jobs:
+  - 4cf
+projects:
+  - lunarweb
+  - thesis
+  - simple-2d-vectors

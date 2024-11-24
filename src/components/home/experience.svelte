@@ -5,7 +5,7 @@
     <div class="carousel carousel-center h-full gap-2 overflow-hidden">
       {@render expItem(1, Uni)}
       {@render expItem(2, Work4CF)}
-      {@render expItem(3, Uni)}
+      {@render expItem(3, WorkANV)}
       {@render expItem(4, Uni)}
     </div>
     <div class="flex w-full justify-center gap-2 pt-2">
@@ -37,6 +37,7 @@
   import type { Component } from 'svelte';
   import Uni from './experience/uni.svelte';
   import Work4CF from './experience/work-4cf.svelte';
+  import WorkANV from './experience/work-anv.svelte';
 
   let exp = $state(1);
 

@@ -1,0 +1,7 @@
+id: python
+type: lang
+projects:
+  - rest-api-performance
+  - minos
+jobs:
+  - anv
