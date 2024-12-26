@@ -2,3 +2,5 @@ id: astro
 type: framework
 projects:
   - lunarweb
+jobs:
+  - 4cf

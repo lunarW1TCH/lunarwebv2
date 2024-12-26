@@ -46,7 +46,7 @@
     LinkableTechnologies,
     TECH_LINKS,
     TECH_NAMES,
-  } from '@/lib/technologies';
+  } from '../../lib/technologies';
   import type { CollectionEntry } from 'astro:content';
   import { match } from 'ts-pattern';
 

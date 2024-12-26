@@ -1,24 +1,11 @@
-/*
-- toml loader
-- schema for project and skill
-*/
-// import { parse } from 'toml';
-// import { glob, file } from 'astro/loaders';
-
-// import { glob } from 'astro/loaders';
-import { Jobs } from '@/lib/jobs';
-import { Projects } from '@/lib/projects';
+import { Jobs } from '../lib/jobs';
+import { Projects } from '../lib/projects';
 import {
   LinkableTechnologies,
   NonLinkableTechnologies,
-} from '@/lib/technologies';
+} from '../lib/technologies';
 import { glob } from 'astro/loaders';
 import { defineCollection, z } from 'astro:content';
-
-// const projects = defineCollection({
-//   schema: z.object({}),
-//   loader: glob({ pattern: /todo/, base: './src/content/projects' }),
-// });
 
 const skill = defineCollection({
   schema: z.object({
@@ -30,4 +17,25 @@ const skill = defineCollection({
   loader: glob({ pattern: '**/*.yaml', base: './src/content/skills' }),
 });
 
-export const collections = { skill };
+const project = defineCollection({
+  schema: z.object({
+    id: Projects,
+    description: z.string(),
+    image: z.string().optional(),
+    technologies: z
+      .union([LinkableTechnologies, NonLinkableTechnologies])
+      .array(),
+    priority: z.number().int(),
+    links: z
+      .object({
+        type: z.enum(['github', 'website', 'other']),
+        link: z.string(),
+      })
+      .array(),
+    createdOn: z.date(),
+    updatedOn: z.date().optional(),
+  }),
+  loader: glob({ pattern: '**/*.mdx', base: './src/content/projects' }),
+});
+
+export const collections = { skill, project };

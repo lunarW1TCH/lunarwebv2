@@ -1,0 +1,44 @@
+---
+id: lunarweb
+description: You're here, my portfolio website created with Astro, Svelte and Tailwind. Previous versions used NextJS, and Panda CSS among others.
+technologies:
+  - astro
+  - svelte
+  - tailwind
+  - next
+  - react
+  - vue
+  - typescript
+links:
+  - type: github
+    link: https://github.com/lunarW1TCH/lunarwebv2
+priority: 1
+createdOn: 2023-08-07
+updatedOn: 2024-11-24
+---
+
+import { componentsMap } from '../../components/mdx/components.svelte';
+export const components = componentsMap;
+
+A simple website built with [Astro](https://astro.build/).
+
+For the first version of this website I used React along with EmotionCSS for styling (I am a huge fan of CSS-in-JS).
+
+Not long after that I rebuilt it with NextJS and PandaCSS. Both frameworks are designed to mix the modern, reactive way of building websites with the performance and stability of pre-rendered content.
+
+Half a year later I started working on current version of Lunarweb. This time utilizing
+the modular framework Astro which is amazing for building mostly-static websites
+like this one.
+
+### How it's built
+
+Content of all **/projects** pages is written with [MDX](https://mdxjs.com/), which is a way of mixing JavaScript components (Svelte and Astro in my case) with syntax of Markdown. Astro has a great support for it. Below you can see a fragment of how it looks like. Along with syntax highlighting which I am utilizing in some examples.
+
+```mdx
+import { componentsMap } from '../../components/mdx/components.svelte';
+export const components = componentsMap;
+
+{/* ... some stuff ... */}
+
+Content of all **/projects** pages is written with [MDX](https://mdxjs.com/), which is a way of mixing JavaScript components (Svelte and Astro in my case) with syntax of Markdown. Astro has a great support for it. Below you can see a fragment of how it looks like. Along with syntax highlighting which I am utilizing in some examples.
+```

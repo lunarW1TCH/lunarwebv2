@@ -10,7 +10,11 @@
 </a>
 
 <script lang="ts">
-  import { PROJECT_LINKS, PROJECT_NAMES, type Projects } from '@/lib/projects';
+  import {
+    PROJECT_LINKS,
+    PROJECT_NAMES,
+    type Projects,
+  } from '../../../lib/projects';
 
   let { project, type }: Props = $props();
 

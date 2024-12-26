@@ -9,13 +9,8 @@ const grouped = groupBy(
   skills.sort((a, b) => a.data.id.localeCompare(b.data.id)).map((s) => s.data),
   (s) => s.type
 );
-
-console.log(grouped);
 ---
 
 <Layout title='Skills'>
-  <!-- <div class='flex flex-col gap-2'>
-    <div>todo: search, filter, favourite technologies carousel</div>
-  </div> -->
   <SkillsContainer skills={grouped} client:load />
 </Layout>

@@ -1,0 +1,24 @@
+---
+import Layout from '../../layouts/layout.astro';
+import type { GetStaticPaths } from 'astro';
+import { getCollection, render } from 'astro:content';
+import ProjectContainer from '../../components/content/project-container.svelte';
+
+export const getStaticPaths = (async () => {
+  const entries = await getCollection('project');
+
+  return entries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<Layout>
+  <ProjectContainer>
+    <Content />
+  </ProjectContainer>
+</Layout>

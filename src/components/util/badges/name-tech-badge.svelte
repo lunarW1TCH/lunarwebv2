@@ -9,7 +9,10 @@
 </span>
 
 <script lang="ts">
-  import { TECH_NAMES, type NonLinkableTechnologies } from '@/lib/technologies';
+  import {
+    TECH_NAMES,
+    type NonLinkableTechnologies,
+  } from '../../../lib/technologies';
 
   let { tech, type }: Props = $props();
 

@@ -13,7 +13,7 @@
 </a>
 
 <script lang="ts">
-  import { JOB_LINKS, JOB_NAMES, type Jobs } from '@/lib/jobs';
+  import { JOB_LINKS, JOB_NAMES, type Jobs } from '../../../lib/jobs';
   import { BriefcaseBusiness } from 'lucide-svelte';
   let { job, type }: Props = $props();
 

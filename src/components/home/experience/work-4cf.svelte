@@ -62,6 +62,7 @@
     <NameTechBadge type="accent" tech="no-sql" />
     <LinkTechBadge type="accent" tech="mongo" />
     <LinkTechBadge type="accent" tech="node" />
+    <LinkTechBadge type="accent" tech="astro" />
     <LinkTechBadge type="accent" tech="bun" />
     <LinkTechBadge type="accent" tech="stripe" />
     <LinkTechBadge type="accent" tech="panda" />
@@ -72,7 +73,7 @@
 </div>
 
 <script lang="ts">
-  import NameTechBadge from '@/components/util/badges/name-tech-badge.svelte';
-  import LinkTechBadge from '@/components/util/badges/link-tech-badge.svelte';
+  import NameTechBadge from '../../../components/util/badges/name-tech-badge.svelte';
+  import LinkTechBadge from '../../../components/util/badges/link-tech-badge.svelte';
   import { Linkedin, ExternalLink } from 'lucide-svelte';
 </script>

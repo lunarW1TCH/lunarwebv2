@@ -1,3 +1,12 @@
 {
-  "cSpell.words": ["Anholcer", "lunarify", "shadcn", "tsconfigs"]
+  "cSpell.words": [
+    "Anholcer",
+    "groupby",
+    "lunarify",
+    "shadcn",
+    "shiki",
+    "tsconfigs",
+    "vercel's"
+  ],
+  "oxc.enable": false
 }

@@ -16,7 +16,7 @@
     TECH_LINKS,
     type LinkableTechnologies,
     TECH_NAMES,
-  } from '@/lib/technologies';
+  } from '../../../lib/technologies';
 
   let { tech, type }: Props = $props();
 
