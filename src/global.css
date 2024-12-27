@@ -6,6 +6,10 @@
   html {
     font-family: 'Jost Variable', system-ui, sans-serif;
   }
+  code {
+    font-family: 'Fira Code Variable', 'Courier New', Courier, monospace;
+    font-size: 12px;
+  }
 }
 
 * {

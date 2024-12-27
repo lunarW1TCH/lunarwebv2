@@ -1,6 +1,7 @@
 <script lang="ts" context="module">
-  import Strong from './strong.svelte';
-  import P from './p.svelte';
+  import strong from './strong.svelte';
+  import p from './p.svelte';
+  import pre from './pre.svelte';
 
-  export const componentsMap = { p: P, strong: Strong };
+  export const componentsMap = { p, strong, pre };
 </script>

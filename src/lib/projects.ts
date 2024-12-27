@@ -40,3 +40,7 @@ export const PROJECT_LINKS = {
 } as const satisfies Record<Projects, string>;
 
 export type Projects = z.infer<typeof Projects>;
+
+export const Icons = z.enum(['Moon']);
+
+export type Icons = z.infer<typeof Icons>;

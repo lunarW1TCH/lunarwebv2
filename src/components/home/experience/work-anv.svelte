@@ -47,6 +47,8 @@
     managing RPi devices from one place.
   </p>
 
+  <div class="grow"></div>
+
   <div class="flex flex-row flex-wrap gap-2">
     <LinkTechBadge type="accent" tech="typescript" />
     <LinkTechBadge type="accent" tech="python" />

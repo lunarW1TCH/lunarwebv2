@@ -1,5 +1,5 @@
 import { Jobs } from '../lib/jobs';
-import { Projects } from '../lib/projects';
+import { Icons, Projects } from '../lib/projects';
 import {
   LinkableTechnologies,
   NonLinkableTechnologies,
@@ -34,6 +34,7 @@ const project = defineCollection({
       .array(),
     createdOn: z.date(),
     updatedOn: z.date().optional(),
+    icon: Icons,
   }),
   loader: glob({ pattern: '**/*.mdx', base: './src/content/projects' }),
 });

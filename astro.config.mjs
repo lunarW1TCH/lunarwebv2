@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import svelte from '@astrojs/svelte';
 import tailwind from '@astrojs/tailwind';
 import mdx from '@astrojs/mdx';
-import vercel from '@astrojs/vercel/static';
+import vercel from '@astrojs/vercel';
 import remarkGfm from 'remark-gfm';
 
 // https://astro.build/config
@@ -23,7 +23,7 @@ export default defineConfig({
   }),
   markdown: {
     shikiConfig: {
-      theme: 'dracula-soft',
+      theme: 'catppuccin-mocha',
       wrap: true,
     },
     gfm: true,

@@ -1,5 +1,5 @@
 <footer
-  class="footer bottom-0 grid-flow-col items-center bg-neutral p-2 text-neutral-content shadow-inner"
+  class="footer bottom-0 grid-flow-col items-center bg-neutral p-2 px-4 text-neutral-content shadow-inner"
 >
   <aside class="grid-flow-col items-center">
     <MoonStar class="h-5 w-5" />

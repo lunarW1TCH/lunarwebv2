@@ -5,8 +5,6 @@
   class:badge-info={type === 'info'}
   class:badge-accent={type === 'accent'}
   href={JOB_LINKS[job]}
-  target={job === 'uv' ? '_blank' : undefined}
-  rel={job === 'uv' ? 'noreferrer' : undefined}
 >
   <BriefcaseBusiness class="mr-1 h-3 w-3" />
   {JOB_NAMES[job]}

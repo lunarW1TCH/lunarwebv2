@@ -13,8 +13,10 @@ export const JOB_NAMES = {
 export const JOB_LINKS = {
   '4cf': '/#exp2',
   anv: '/#exp3',
-  nyx: '/#exp4',
-  uv: 'https://www.linkedin.com/company/uv-ou/',
-} as const satisfies Record<Jobs, string>;
+  uv: '/#exp4',
+  nyx: '/#exp5',
+} as const satisfies Record<Jobs, `/${z.infer<typeof HomeHash>}`>;
 
 export type Jobs = z.infer<typeof Jobs>;
+
+export const HomeHash = z.enum(['#exp1', '#exp2', '#exp3', '#exp4', '#exp5']);

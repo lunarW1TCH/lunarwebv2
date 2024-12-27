@@ -1,10 +1,14 @@
-<div class="mt-8 flex w-[600px] max-w-full flex-row gap-2">
+<div
+  class="mt-8 flex w-[600px] max-w-full flex-row flex-col gap-2 min-[500px]:flex-row"
+>
   <div
     class="card card-body card-compact min-w-fit flex-row bg-neutral p-4 shadow-xl"
   >
-    <div class="gap-2">
-      <div class="form-control w-36">
-        <label class="label cursor-pointer">
+    <div
+      class="gap-2 max-[500px]:grid max-[500px]:w-full max-[500px]:grid-cols-2 max-[500px]:gap-4"
+    >
+      <div class="form-control w-36 max-[500px]:w-full">
+        <label class="label cursor-pointer max-[500px]:w-full">
           <span class="label-text">Languages</span>
           <input
             type="checkbox"
@@ -14,8 +18,8 @@
         </label>
       </div>
 
-      <div class="form-control w-36">
-        <label class="label cursor-pointer">
+      <div class="form-control w-36 max-[500px]:w-full">
+        <label class="label cursor-pointer max-[500px]:w-full">
           <span class="label-text">Frameworks</span>
           <input
             type="checkbox"
@@ -25,8 +29,8 @@
         </label>
       </div>
 
-      <div class="form-control w-36">
-        <label class="label cursor-pointer">
+      <div class="form-control w-36 max-[500px]:w-full">
+        <label class="label cursor-pointer max-[500px]:w-full">
           <span class="label-text">Libraries</span>
           <input
             type="checkbox"
@@ -36,8 +40,8 @@
         </label>
       </div>
 
-      <div class="form-control w-36">
-        <label class="label cursor-pointer">
+      <div class="form-control w-36 max-[500px]:w-full">
+        <label class="label cursor-pointer max-[500px]:w-full">
           <span class="label-text">Other</span>
           <input
             type="checkbox"

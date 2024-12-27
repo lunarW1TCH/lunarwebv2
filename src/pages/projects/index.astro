@@ -1,5 +1,12 @@
 ---
 import Layout from '../../layouts/layout.astro';
+import ProjectItem from '../../components/content/project-item.svelte';
+import { getCollection } from 'astro:content';
+
+const projects = await getCollection('project');
+const skills = await getCollection('skill');
 ---
 
-<Layout title='Projects'>todo list of projects</Layout>
+<Layout title='Projects'>
+  {projects.map((p) => <ProjectItem project={p} {skills} />)}
+</Layout>
