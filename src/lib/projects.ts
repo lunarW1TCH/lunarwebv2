@@ -41,6 +41,16 @@ export const PROJECT_LINKS = {
 
 export type Projects = z.infer<typeof Projects>;
 
-export const Icons = z.enum(['Moon']);
+export const Icons = z.enum([
+  'Moon',
+  'Gauge',
+  'Compass',
+  'Component',
+  'Bitcoin',
+  'Dices',
+  'Telescope',
+  'CircuitBoard',
+  'AudioLines',
+]);
 
 export type Icons = z.infer<typeof Icons>;

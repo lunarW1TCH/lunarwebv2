@@ -8,5 +8,11 @@ const skills = await getCollection('skill');
 ---
 
 <Layout title='Projects'>
-  {projects.map((p) => <ProjectItem project={p} {skills} />)}
+  <div class='mx-2 my-8 max-w-full flex-grow'>
+    {
+      projects
+        .toSorted((a, b) => a.data.priority - b.data.priority)
+        .map((p) => <ProjectItem project={p} {skills} />)
+    }
+  </div>
 </Layout>

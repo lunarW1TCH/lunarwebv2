@@ -38,6 +38,7 @@ export const LinkableTechnologies = z.enum([
   'phoenix',
   'rocket',
   'express',
+  'vitepress',
 ]);
 
 export const NonLinkableTechnologies = z.enum([
@@ -92,6 +93,7 @@ export const TECH_LINKS = {
   rocket: 'https://rocket.rs/',
   scss: 'https://sass-lang.com/',
   tauri: 'https://tauri.app/',
+  vitepress: 'https://vitepress.dev/',
 } as const satisfies Record<LinkableTechnologies, string>;
 
 export const TECH_NAMES = {
@@ -140,6 +142,7 @@ export const TECH_NAMES = {
   tauri: 'Tauri',
   'state-management':
     'State management [zustand, nanostores, svelte/store, ...]',
+  vitepress: 'VitePress',
 } as const satisfies Record<
   LinkableTechnologies | NonLinkableTechnologies,
   string

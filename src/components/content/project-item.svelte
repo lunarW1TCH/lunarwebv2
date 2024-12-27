@@ -4,7 +4,7 @@
   <div class="prose card-body">
     <div class="prose flex">
       <a
-        href="/projects/{project.data.id}"
+        href={PROJECT_LINKS[project.data.id]}
         class="group link-hover link flex decoration-accent"
       >
         <Icon
@@ -27,32 +27,56 @@
 {#snippet badge(tech: (typeof project)['data']['technologies'][number])}
   {@const isLinkable = LinkableTechnologies.safeParse(tech)}
   {@const skill = skills.find((s) => s.data.id === tech)}
+  {@const type = match(skill?.data.type)
+    .returnType<'secondary' | 'info' | 'accent' | 'primary'>()
+    .with('framework', () => 'accent')
+    .with('lang', () => 'secondary')
+    .with('lib', () => 'primary')
+    .with('other', undefined, () => 'info')
+    .exhaustive()}
 
-  {#if isLinkable.success && skill}
-    {@const type = match(skill.data.type)
-      .returnType<'secondary' | 'info' | 'accent' | 'primary'>()
-      .with('framework', () => 'accent')
-      .with('lang', () => 'secondary')
-      .with('lib', () => 'primary')
-      .with('other', () => 'info')
-      .exhaustive()}
-
+  {#if isLinkable.success}
     <LinkTechBadge tech={isLinkable.data} {type} />
+  {:else}
+    <NameTechBadge tech={tech as NonLinkableTechnologies} {type} />
   {/if}
 {/snippet}
 
 <script lang="ts">
   import { match } from 'ts-pattern';
   import type { CollectionEntry } from 'astro:content';
-  import { ArrowUpRight, Moon } from 'lucide-svelte';
-  import { PROJECT_NAMES } from '../../lib/projects';
+  import {
+    ArrowUpRight,
+    AudioLines,
+    Bitcoin,
+    CircuitBoard,
+    Component,
+    Dices,
+    DraftingCompass,
+    Gauge,
+    Moon,
+    Telescope,
+  } from 'lucide-svelte';
+  import { PROJECT_LINKS, PROJECT_NAMES } from '../../lib/projects';
   import LinkTechBadge from '../util/badges/link-tech-badge.svelte';
-  import { LinkableTechnologies } from '../../lib/technologies';
+  import {
+    LinkableTechnologies,
+    NonLinkableTechnologies,
+  } from '../../lib/technologies';
+  import NameTechBadge from '../util/badges/name-tech-badge.svelte';
 
   let { project, skills }: Props = $props();
 
   let Icon = match(project.data.icon)
     .with('Moon', () => Moon)
+    .with('Gauge', () => Gauge)
+    .with('Compass', () => DraftingCompass)
+    .with('Component', () => Component)
+    .with('Bitcoin', () => Bitcoin)
+    .with('Dices', () => Dices)
+    .with('Telescope', () => Telescope)
+    .with('CircuitBoard', () => CircuitBoard)
+    .with('AudioLines', () => AudioLines)
     .exhaustive();
 
   type Props = {

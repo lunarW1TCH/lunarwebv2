@@ -31,7 +31,8 @@ const project = defineCollection({
         type: z.enum(['github', 'website', 'other']),
         link: z.string(),
       })
-      .array(),
+      .array()
+      .optional(),
     createdOn: z.date(),
     updatedOn: z.date().optional(),
     icon: Icons,

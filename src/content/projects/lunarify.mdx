@@ -1,0 +1,41 @@
+---
+id: lunarify
+description: Mobile and web app which uses OAuth to display data from user's Spotify account.
+technologies:
+  - typescript
+  - react
+  - scss
+  - react-native
+  - oauth
+links:
+  - type: github
+    link: https://github.com/lunarW1TCH/lunarify-react
+  - type: github
+    link: https://github.com/lunarW1TCH/lunarify-react-native
+priority: 60
+createdOn: 2023-06-19
+icon: AudioLines
+---
+
+import { componentsMap } from '../../components/mdx';
+import Img from '../../components/mdx/img.astro';
+export const components = componentsMap;
+
+## Introduction
+
+Lunarify was my first solo project of such complexity. I created two apps, one with React and the other with React Native. Both were using Spotify API to display 'Spotify wrapped all-year-round'.
+
+<Img
+  src="lunarify"
+  alt="Two of my most-listened-to artists on Spotify as seen in Lunarify"
+/>
+
+## CSS-in-JS
+
+It was actually React Native which introduced me to CSS-in-JS. As apps created with it aren't actually websites but native apps manipulated through JavaScript, styling couldn't be done with CSS.
+
+React Native uses style system which translates to native code on both Android and iOS yet with syntax and functionality that reminds of CSS. The principle is the same as in web-based CSS-in-JS: styles are written in JavaScript (or TypeScript and then also typechecked) and translated to and transformed to valid styles during build-time.
+
+I haven't made any of Lunarify apps publicly accessible but feel free to browse through the code on my Github account.
+
+If you're looking for an app with similar functionality then try [Skiley.](https://skiley.net/)

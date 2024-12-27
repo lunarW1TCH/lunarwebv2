@@ -1,0 +1,37 @@
+---
+id: minos
+description: Project I worked on while working at ANV Production. I was responsible for creating a whole ecosystem of wirelessly communicating devices.
+technologies:
+  - python
+  - flask
+  - arduino
+  - rpi
+  - typescript
+  - socket-io
+  - next
+links:
+  - type: website
+    link: https://anvproduction.pl/
+priority: 50
+createdOn: 2023-08-31
+icon: CircuitBoard
+---
+
+import { componentsMap } from '../../components/mdx';
+import Img from '../../components/mdx/img.astro';
+export const components = componentsMap;
+
+## Introduction
+
+This is probably the project that made me grow the most as a software developer.
+
+Minos required me to work with Arduino devices, figure out how the actual hardware works and program a bit in C++.
+
+<Img
+  alt="One of the pictures I took during working on connecting radio modules to Arduino"
+  src="minos"
+/>
+
+Arduinos were communicating through radio modules with Raspberry Pi devices which were communicating through Socket.IO with frontend app.
+
+The whole project required me to setup two systems of communication as well as frontend and backend application to control it.

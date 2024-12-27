@@ -1,0 +1,39 @@
+---
+import { Image } from 'astro:assets';
+
+import taurim from '../../assets/taurim.png';
+import lunarify from '../../assets/lunarify.png';
+import minos from '../../assets/minos.jpg';
+import lunarRoller from '../../assets/lunar-roller.png';
+import lunarStars from '../../assets/lunar-stars.png';
+import { match } from 'ts-pattern';
+
+type Props = {
+  alt: string;
+  src: 'taurim' | 'lunar-roller' | 'lunar-stars' | 'lunarify' | 'minos';
+};
+
+const { alt, src } = Astro.props;
+
+const image = match(src)
+  .with('taurim', () => taurim)
+  .with('lunar-roller', () => lunarRoller)
+  .with('lunar-stars', () => lunarStars)
+  .with('lunarify', () => lunarify)
+  .with('minos', () => minos)
+  .exhaustive();
+---
+
+<div class='mb-4 flex w-full flex-col items-center justify-center'>
+  <!-- astro image component doesn't behave like in docs with typescript -->
+  <!-- @ts-expect-error -->
+  <Image
+    alt={alt}
+    class='rounded border border-accent'
+    src={image}
+    width={750}
+  />
+  <p class='text-sm italic text-accent'>
+    {alt}
+  </p>
+</div>

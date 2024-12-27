@@ -1,0 +1,47 @@
+---
+id: exchange-rates
+description: Simple cli app for performing rate conversions of currencies.
+technologies:
+  - rust
+  - docker
+links:
+  - type: github
+    link: https://github.com/lunarW1TCH/exchange_rates
+priority: 30
+createdOn: 2024-03-20
+icon: Bitcoin
+---
+
+import { componentsMap } from '../../components/mdx';
+export const components = componentsMap;
+
+## What it is
+
+A command-line tool in Rust that converts amounts between different currencies using
+real-time exchange rate data fetched from an API.
+
+## Tech overview
+
+- **Rust** - implementation language
+  - **serde** - serialization and deserialization of structs
+  - **reqwest** - http requests
+  - **tokio** - async runtime
+  - **clap** - easy cli setup
+- **Docker** - dockerfile included for easy building and testing
+- **AlphaVantage** - [a real-time currency exchange API](https://www.alphavantage.co/) with a free plan
+
+## Example
+
+### Command
+
+```sh
+docker run exchange -t USD -f PLN -a 7
+```
+
+### Result
+
+```
+Exchange from Polish Zloty into United States Dollar:
+Exchange rate: 0.25090000,
+7PLN = 1.7563USD
+```
