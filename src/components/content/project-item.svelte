@@ -11,8 +11,8 @@
           size={64}
           class="mr-2 min-w-[64px] stroke-1 group-hover:stroke-accent"
         />
-        <h1 class="mb-0">{PROJECT_NAMES[project.data.id]}</h1>
-        <ArrowUpRight />
+        <h1 class="mb-0 max-sm:text-lg">{PROJECT_NAMES[project.data.id]}</h1>
+        <ArrowUpRight class="max-sm:w-[16px]" />
       </a>
     </div>
     <p class="-mt-8 ml-[72px]">{project.data.description}</p>

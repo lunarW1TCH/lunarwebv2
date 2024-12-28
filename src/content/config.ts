@@ -30,6 +30,7 @@ const project = defineCollection({
       .object({
         type: z.enum(['github', 'website', 'other']),
         link: z.string(),
+        name: z.string(),
       })
       .array()
       .optional(),

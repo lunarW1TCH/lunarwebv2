@@ -1,4 +1,4 @@
-<b class="font-semibold text-accent">{@render children?.()}</b>
+<h3 class="text-bold my-1 text-lg text-primary">{@render children?.()}</h3>
 
 <script lang="ts">
   import type { Snippet } from 'svelte';

@@ -1,1 +1,1 @@
-<p class="mb-4 text-neutral-content text-opacity-80"><slot /></p>
+<p class="mb-2 text-neutral-content text-opacity-80"><slot /></p>
