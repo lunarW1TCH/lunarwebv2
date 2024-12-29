@@ -2,11 +2,7 @@
   class="card card-compact mx-1 w-[22rem] flex-shrink bg-neutral p-0 text-neutral-content shadow-xl"
 >
   <figure class="p-4">
-    <img
-      src="https://www.lunarweb.dev/_astro/gala.CEeY47Qy.jpg"
-      alt="gala"
-      class="rounded border border-accent"
-    />
+    <img src="/gala.webp" alt="gala" class="rounded border border-accent" />
   </figure>
   <div class="card-body items-center text-center">
     <h2 class="card-title">Hello, I am Adrian Żegnałek</h2>

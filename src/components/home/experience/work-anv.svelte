@@ -42,9 +42,9 @@
     system using radio modules and web sockets.
   </p>
   <p class="my-0.5">
-    I created from the ground up: code for Arduino controllers, Flask and
-    Socket.IO based server on RPi devices, frontend and backend services for
-    managing RPi devices from one place.
+    I created: code for Arduino controllers, Flask and Socket.IO based server on
+    RPi devices, frontend and backend services for managing RPi devices from one
+    place.
   </p>
 
   <div class="grow"></div>

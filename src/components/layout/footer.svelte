@@ -3,7 +3,7 @@
 >
   <aside class="grid-flow-col items-center">
     <MoonStar class="h-5 w-5" />
-    <p>Copyright © {new Date().getFullYear()} | Adrian Żegnałek</p>
+    <p>Copyright &copy; {new Date().getFullYear()} | Adrian Żegnałek</p>
   </aside>
   <nav class="grid-flow-col gap-4 place-self-center justify-self-end">
     <a

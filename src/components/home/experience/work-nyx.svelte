@@ -56,8 +56,7 @@
   </p>
 
   <p class="my-0.5">
-    My responsibilities were mostly focused on creating content inside of Unreal
-    Engine 5.
+    My responsibilities included creating content inside of Unreal Engine 5.
   </p>
 
   <div class="grow"></div>
