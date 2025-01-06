@@ -2,7 +2,9 @@
   class="card card-compact mx-1 min-h-[565px] w-[22rem] flex-shrink bg-neutral p-0 text-neutral-content shadow-xl"
 >
   <div class="card-body">
-    <div class="carousel carousel-center h-full gap-2 overflow-hidden">
+    <div
+      class="carousel carousel-center h-full gap-2 overflow-hidden scroll-auto"
+    >
       {@render expItem(1, Uni)}
       {@render expItem(2, Work4CF)}
       {@render expItem(3, WorkANV)}
@@ -21,7 +23,9 @@
 
 {#snippet pageBtn(index: number)}
   <a
-    onclick={() => onclick(index)}
+    onclick={() => {
+      onclick(index);
+    }}
     href="#exp{index}"
     class="btn btn-accent btn-xs {exp === index ? 'btn-accent' : 'btn-ghost'}"
   >
